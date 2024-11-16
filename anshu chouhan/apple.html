@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><
+
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0%;
+    }
+
+    .footer {
+        background-color: #121212;
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav1 {
+        display: flex;
+        align-items: center;
+        height: 7vh;
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    .nav1 a {
+        text-decoration: none;
+        font-size: 15px;
+        color: gray;
+    }
+
+    .built {
+
+        margin-bottom: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .nav2 {
+        background-color: black;
+        height: 50vh;
+        width: 100%;
+    }
+
+    .image {
+        position: absolute;
+        z-index: -2;
+
+
+    }
+
+    .nav2 h3 {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+
+    }
+
+    .event {
+        background-color: black;
+        height: 10vh;
+        width: 20%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .event1 {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .ip16pro {
+        font-size: 50px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+
+    }
+
+    .event2 {
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        background-color: blue;
+        border-radius: 35px;
+        color: white;
+    }
+
+    .cont {
+        font-size: 30px;
+        color: white;
+        height: 60px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 450px;
+    }
+
+    .button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .but1 {
+        font-size: 15px;
+        color: white;
+        background-color: blue;
+        padding: 1%;
+        border-radius: 15px;
+    }
+
+    .but2 {
+        font-size: 15px;
+        color: blue;
+        background-color: transparent;
+        padding: 1%;
+        border-radius: 15px;
+        border: 1px solid blue;
+    }
+
+    .section2 {
+        background: linear-gradient(to bottom, #0F164D, #5D6AB8, #F0F3FA);
+        height: 100vh;
+        width: 100%;
+    }
+
+    .ip16pro {
+        font-size: 50px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .cont1 {
+        font-size: 30px;
+        color: white;
+        height: 80px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .built_1 {
+        margin-bottom: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+
+    .cont2 {
+        font-size: 30px;
+        color: black;
+        height: 60px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .button1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .but1 {
+        font-size: 15px;
+        color: white;
+        background-color: blue;
+        padding: 1%;
+        border-radius: 15px;
+    }
+
+    .but2 {
+        font-size: 15px;
+        color: blue;
+        background-color: transparent;
+        padding: 1%;
+        border-radius: 15px;
+        border: 1px solid blue;
+    }
+
+    .section3 {
+        background: whitesmoke;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .img1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .watch {
+
+        font-size: 50px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .button3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .but1 {
+        font-size: 15px;
+        color: white;
+        background-color: blue;
+        padding: 1%;
+        border-radius: 15px;
+    }
+
+    .but2 {
+        font-size: 15px;
+        color: blue;
+        background-color: transparent;
+        padding: 1%;
+        border-radius: 15px;
+        border: 1px solid blue;
+    }
+
+    .img2 img {
+
+        width: 100%;
+    }
+
+    .section4 {
+        background: black;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .left {
+        width: 48%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 640px;
+    }
+
+    .cont3 {
+        font-size: 30px;
+        width: 50%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button4 {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+    }
+
+    .but1 {
+        font-size: 20px;
+        color: white;
+        background-color: blue;
+        padding: 1%;
+        border-radius: 15px;
+    }
+
+    .but2 {
+        font-size: 20px;
+        color: blue;
+        background-color: transparent;
+        padding: 1%;
+        border-radius: 15px;
+        border: 1px solid blue;
+    }
+
+    .img3 {
+        display: flex;
+
+    }
+    .right{
+        background-image: url(WhatsApp\ Image\ 2024-09-15\ at\ 11.20.38\ PM\ \(1\).jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:640px;
+        width: 48%;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+       
+    
+     
+      
+ 
+    }
+
+    .cont4 {
+        font-size: 30px;
+        width: 50%;
+        color: white;
+   
+    
+    
+    }
+
+    .button5 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .but1 {
+        font-size: 15px;
+        color: white;
+        background-color: blue;
+        padding: 1%;
+        border-radius: 15px;
+    }
+
+    .but2 {
+        font-size: 15px;
+        color: blue;
+        background-color: transparent;
+        padding: 1%;
+        border-radius: 15px;
+        border: 1px solid blue;
+    }
+    .section5{
+        background: white;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        
+    }
+    .left1{
+        background-image:url(c:\Users\iant\Desktop\promo_airpodsmax_announce__2srayzjz3iay_medium.jpg);
+        width: 49%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        
+        } 
+    .cont5{
+    font-size: 30px;
+        width: 50%;
+        color:black;
+    }
+    .button6 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+    .but1 {
+        font-size: 15px;
+        color: white;
+        background-color: blue;
+        padding: 1%;
+        border-radius: 15px;
+    }
+    .but2 {
+        font-size: 15px;
+        color: blue;
+        background-color: transparent;
+        padding: 1%;
+        border-radius: 15px;
+        border: 1px solid blue;
+    }
+    .right1{
+background-image: url(c:\Users\iant\Downloads\promo_macbook_air_m3__e43jegok3wuq_medium.jpg);
+        width: 49%;
+    
+        height: 100vh;
+    }
+    .cont6{
+    font-size: 30px;
+        width: 50%;
+        color:black;
+    }
+    .button7 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+    .but1 {
+        font-size: 15px;
+        color: white;
+        background-color: blue;
+        padding: 1%;
+        border-radius: 15px;
+    }
+    .but2 {
+        font-size: 15px;
+        color: blue;
+        background-color: transparent;
+        padding: 1%;
+        border-radius: 15px;
+        border: 1px solid blue;
+    }
+</style>
+
+<body style="background-color: black;">
+    <div class="footer">
+        <div class="nav1">
+            <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAeBJREFUSEvN1T9oFEEUBvDv7SXe7hp35jhEsRHsrERMLCxFJWIjKrH3T6ONIGqrrQhWWqWysDAKWmuqJIpoJZZRUAQlWMxMzuyK3nxmu+PuvN2RBFzYZmf2/ea9N7Mr2ORLNjk+/gkguaVw7roAp2Ol9o9aZDBAMi6cWwRwgCLv0izbt6FAYcwdilwtg5KcSbWe21Agt/YjgF0AziVKPazq4cgS/Vxd3Uvvj5KcYLf7IG23v+TGXPzdaDwd8/44gD0AluH9QtJqfRqGDQWMMa0YmF2v8amelwhgCcBXANMAtvUFvJkodasfGQBIjhfOvQQwWZV+/7gnp7Zq/bb3+QCQO3ce5GxocJJnU60fVWaQW1uW4VAIICJP4iw7U6sHubXfAbSDAOByrNT9usAvAGMhAEVupFl2uy7wDcCOEADAXKLUTF3gOYAjgQCFPBZr/aKyyWvOXRNyaLojUTKHyIX+0z2wTTudzs5Gt/sZwHhgFuX0N4lSB0eeg3Jwzdp7AlwKBSKRk80se1YJcGVlomg23wPYHYC8SpQaOD9//dj9sHYqAhYANKsQAiYiJ2OtP1Q2uXdCbsxhRtFdIZWQjyEyT+9zimwXkRPrNS/v1wJciZVarrVNq1YbOh78y/zvgD//yaoZYTJODQAAAABJRU5ErkJggg==" />
+            <a href="">Store</a>
+            <a href="">Mac</a>
+            <a href="">Ipad</a>
+            <a href="">I phone</a>
+            <a href="">Watch</a>
+            <a href="">Airpods</a>
+            <a href="">Tv&Home</a>
+            <a href="" Entertainment></a>
+            <a href="">Accessories</a>
+            <a href="">Support</a>
+            }
+            <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAm5JREFUSEu1lEtoE1EUhv9/mrSZSO6dCrboTrduqnXrQsSKGx8gokJBVBBBETEqdaGCoCi+haJgEUEqLgTdiIK4UHdFi9idG1cu1Ni5k8SZaJpjJ7ahsXkMMb2rOcM95zuPe35igQ8XOD5qArLZ7JL41FRayH4AfTNJjIMc+w1cVUp9j5rYPIBvzKAAtwjoOkF+WOTeLqWeRoFUAQJjDgtwM3Qk+VhKpWHbcV6Ftu+66wkcEnJraAuwO6n1w2aQCiBw3RVCfgJgCZlOKnWllrNvzJnp/2cB5IuWtTyVSn1rBKkAfGOGARwE8MjWemcjJ9+Y5wA2Ajhta30uKuALgKUdpVJfZ3f3h0ZOgesOCPkCwDtb6zVRAb8AxBNKdZAsNXIyxizuBDIAPFvreo+hHGJui3IAFiUKhRR7esLvukcyGRXEYgbAV1vr3qgVTABYKeTapFJvG85gcnIdLCt8XS9trTdEA3jeeYgMUeRJwnG2NRly2P8BAIO21g8iAfL5/DKrWPwczkHI40mlLtdyDFz3opAnCIwntF4deQ/Ky+R5eyByr7JowA1bqTehXfC8LSWRAwA2zQzvWpdS6WYPYp5U/HTdHSDvEHDqZOdR5HZYBUQmSJ5MaP2sXiU1xS6Xy/XGisVjYln9FFklQAHAexF5XbSskVDsfGPGAJR3INQuW6kjJOVfUMtyHXjeZhGpCN50xdcTWh9tG6A8M2NGAeyqBCUv2EqdmgtpuYJya0TihWx2VES2V4KKjNiOs3/W/i/AbBDfde+C3PdXG6qraAtARKzA8+4L+TGp1KW2tajZklWJXZTLrdxpS4sagf8A70zmGcJPah4AAAAASUVORK5CYII=" />
+            <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUZJREFUSEvtlb9KA0EQxr+5a3IpdgJiYSNYWfsGaqOdjfgOgpXYSBpFG7Gw0newshMURJ/AwifQxkpk9+BykeQcPblAEje7l5Ngk60WZvb7zXz7jzDhQRPWRylAS+tNCoJtiKwWBd0J0XldqStfgV5AW+tTIdobIXQQMR+6IE5AS+stIrosBI6yMLzI52GW7QBo5nMSWas1GrejIE5A25hHAZYE2K0zn/WLpFo3QXQM4CZiXq8ESI3JAAQdolml1Fu/SJIkc0G3+wrgPWKeqQqQfOG3z9ZOU2Oc8R8LB9qO43uILPtOhjNO9BAptdLLGQQUFf0JMNSxFdCzxGfBcNyW/7+Aca0au4Mp4Pc9KHFxXLZN98B7qMpY9AJg3qvkTniOmBesb9FHHG98ipwAWKwCEaKnQGS/xnxtBVQR9a3x/sk+AV/8C9sQuBkeo6+GAAAAAElFTkSuQmCC" />
+
+
+        </div>
+    </div>
+    <div class="event1">
+
+
+        <div class="img"> <img class="image"
+                src=" https://www.apple.com/v/iphone-16-pro/a/images/overview/welcome/hero_endframe__b3cjfkquc2s2_large.jpg"
+                height="700" width="1300" alt=""></div>
+        <div class="ip16pro">
+            <p>IPHONE 16 PRO</p>
+        </div>
+        <div class="built">
+            <img src="https://www.apple.com/in/iphone-16-pro/images/overview/welcome/hero_apple_intelligence_headline__fwxxapju9a6i_large.png "
+                alt="">
+        </div>
+        <div class="cont">
+            <p>Available from 20 september <br>
+                apple intelligence starting in us english later this year </p>
+        </div>
+        <div class="button">
+            <button class="but1">Learn more</button>
+            <button class="but2">Pre-order</button>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="ip16pro">
+            <p>I phone 16 PRO</p>
+        </div>
+        <div class="cont1">
+            <h1>Built for Apple intelligence</h1>
+        </div>
+        <div class="built_1">
+            <img src="97e59542-fb4e-4f5a-bf22-6cf3fbf1009d-removebg-preview.png" alt="">
+        </div>
+        <div class="cont2">
+            <p>Available from 20 september <br>
+                Apple intelligence starting in us english later this year </p>
+        </div>
+        <div class="button1">
+            <button class="but1">learn more</button>
+            <button class="but2">pre-order</button>
+        </div>
+        <div class="section3">
+
+            <div class="img1">
+                <img src="Apple (India)_files/logo_watch_series_10__b8mk7vq7k2b6_large.png" alt="">
+            </div>
+            <div class="watch ">Thinstant classic</div>
+
+            <div class="button3">
+                <button class="but1">learn more</button>
+                <button class="but2">pre-order</button>
+            </div>
+            <div class="img2">
+                <img src="c:\Users\iant\Downloads\WhatsApp Image 2024-09-15 at 11.20.41 PM (1).jpeg" alt="">
+            </div>
+            <div class="section4">
+                <div class="left">
+                    <img src="Apple (India)_files/logo_watch_ultra_2__1xqo1s2atgyq_large.png" alt="">
+
+                    <div class="cont3">
+                        <p>New finish. never quit</p>
+                    </div>
+                    <div class="button4">
+                        <button class="but1">learn more</button>
+                        <button class="but2">Buy</button>
+                    </div>
+                    <div class="img3">
+                        <img src="c:\Users\iant\Downloads\WhatsApp Image 2024-09-15 at 11.20.42 PM.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="cont4">
+                        <h1>Airpods 4</h1>
+                        <p>Iconic. Now supersonic. <br>
+                            Available with active noise cancellation.
+                        </p>
+                        <div class="button5">
+                            <button class="but1">learn more</button>
+                            <button class="but2">Buy</button>
+                        </div>
+        
+
+                    </div>
+                </div>
+            </div>
+<div class="section5">
+    <div class="left1">
+<div class="cont5">
+<h1>Airpods Max</h1>
+<h2>Symphonic .boom </h2> 
+<div class="button6">
+    <button class="but1">learn more</button>
+    <button class="but2">Buy</button>
+</div></div>
+</div>
+<div class="right1">
+<div class="cont6">
+    <h1>MacBook Air</h1>
+    <div class="button7">
+        <button class="but1">learn more</button>
+        <button class="but2">Buy</button>
+
+
+</div>
+</div>
+</body>
+
+</html>

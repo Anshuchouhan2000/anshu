@@ -1,0 +1,70 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2f3136;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.header {
+    background-color: #202225;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #2f3136;
+    padding: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background-color: #3a3c40;
+}
+
+.main-content {
+    flex-grow: 1;
+    background-color: #36393f;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-window {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.messages {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.message {
+    margin: 5px 0;
+}
+
+.message-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}

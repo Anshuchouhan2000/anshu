@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <html>
+
+    <head>
+        <title>
+            Discord - Group Chat That's All Fun &amp; Games
+        </title>
+
+        <style>
+            body {
+                margin: 0;
+                font-family: 'Roboto', sans-serif;
+                background-image: url("new-and-slightly-older-discord-login-screen-as-a-png-v0-nnd20frfve3d1.webp");
+                background-repeat: ;
+                background-size: contain;
+                height: 100%;
+                color: white;
+            }
+
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 40px;
+
+            }
+
+            .navbar {
+                height: 40px;
+            }
+
+            .navbar a {
+                color: white;
+                justify-content: center;
+                align-items: center;
+
+                text-decoration: none;
+                margin: 15px;
+                font-size: 20px;
+            }
+
+            .navbar .login-btn {
+                padding: 10px 20px;
+                border: 2px solid white;
+                color: black;
+                background-color: white;
+                border-radius: 20px;
+            }
+
+            .main-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 100px 100px;
+
+            }
+
+            .main-content .text-content {
+                max-width: 100%;
+            }
+
+            .main-content h1 {
+                font-size: 50px;
+                font-weight: 700;
+                margin: 0 0 20px;
+            }
+
+            .main-content p {
+                font-size: 20px;
+                line-height: 1.5;
+            }
+
+            .main-content .image-content {
+                max-width: 50%;
+            }
+
+            .main-content .image-content img {
+                width: 100%;
+            }
+
+            .button {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin: 20px;
+            }
+
+            .but1 {
+                font-size: 15px;
+                color:black;
+                background-color:white;
+                padding: 1%;
+                border-radius: 20px;
+                border: 1px solid blue;
+            }
+
+            .but2 {
+                font-size: 15px;
+                color: white;
+                background-color: darkblue;
+                padding: 1%;
+                border-radius: 20px;
+                border: 1px solid blue;
+            }
+
+            .img {
+                width: 80%;
+                display: flex;
+                justify-content: right;
+
+
+
+            }
+
+            .container {
+                display: flex;
+                background-color: blue;
+
+                border-radius: 20px;
+                padding: 20px;
+                width: 100%;
+                max-width: 1000px;
+                box-shadow: 0 4px 8px rgba(30, 6, 212, 0.2);
+            }
+
+            .left-section,
+            .right-section {
+                flex: 1;
+                padding: 100px;
+            }
+
+            .left-section {
+                background: linear-gradient(135deg, #1a2a6c, #1316c0, #140bbe);
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+
+            }
+
+            .vedio video {
+
+                width: 200px;
+                height: 200px;
+
+
+            }
+
+
+            .right-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .right-section h1 {
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+
+            .right-section p {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            .container1 {
+                display: flex;
+                background: darkblue;
+                border-radius: 20px;
+                padding: 20px;
+                width: 100%;
+                max-width: 1000px;
+                box-shadow: 0 4px 8px rgba(30, 6, 212, 0.2);
+            }
+
+            .left-section1,
+            .right-section1 {
+                flex: 1;
+                padding: 100px;
+            }
+
+            .left-section1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .left-section1 h1 {
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+
+            .left-section1 p {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            .right-section1 {
+                background: plum;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .vedio2 .vedio {
+                width: 100px;
+                height: 200px;
+
+            }
+
+
+
+            .container2 {
+                display: flex;
+                background: darkblue;
+                border-radius: 20px;
+                padding: 20px;
+                width: 100%;
+                max-width: 1000px;
+                box-shadow: 0 4px 8px rgba(30, 6, 212, 0.2);
+                
+            }
+
+            .left-section2,
+            .right-section2 {
+                flex: 1;
+                padding: 20px;
+            }
+
+            .left-section2 {
+                background: linear-gradient(135deg, #1a2a6c, #1316c0, #140bbe);
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
+
+            .vedio3 .vedio {
+                width: 100px;
+                height: 100px;
+
+            }
+
+            .right-section2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .right-section2 h1 {
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+
+            .right-section2 p {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            .container3 {
+                display: flex;
+                background: darkblue;
+                border-radius: 20px;
+                padding: 20px;
+                width: 100%;
+                max-width: 1000px;
+                box-shadow: 0 4px 8px rgba(30, 6, 212, 0.2);
+            }
+
+            .left-section3,
+            .right-section3 {
+                flex: 1;
+                padding: 20px;
+            }
+
+            .left-section3 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .left-section3 h1 {
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+
+            .left-section3 p {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            .right-section3 {
+                background-color: rgb(203, 152, 183);
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
+
+            .vedio4 .vedio {
+                width: 100px;
+                height: 100px;
+
+            }
+
+            .container4 {
+                display: flex;
+                background: darkblue;
+                border-radius: 20px;
+                padding: 20px;
+                width: 100%;
+                max-width: 1200px;
+                
+
+                box-shadow: 0 4px 8px rgba(30, 6, 212, 0.2);
+            }
+
+            .left-section4,
+            .right-section4 {
+                flex: 1;
+                padding: 20px;
+            }
+
+            .left-section4 {
+                background: linear-gradient(135deg, #1a2a6c, #1316c0, #140bbe);
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
+
+            .vedio5 .vedio {
+                width: 100px;
+                height: 100px;
+            }
+
+            .right-section4 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .right-section4 h1 {
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+
+            .right-section4 p {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            .container5 {
+                display: flex;
+                background: darkblue;
+                border-radius: 20px;
+                padding: 20px;
+                width: 100%;
+                max-width: 1000px;
+                box-shadow: 0 4px 8px rgba(30, 6, 212, 0.2);
+            }
+
+            .left-section5,
+            .right-section5 {
+                flex: 1;
+                padding: 20px;
+            }
+
+            .left-section5 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .left-section5 h1 {
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+
+            .left-section5 p {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            .right-section5 {
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
+
+            .vedio6 .vedio {
+                width: 100px;
+                height: 100px;
+            }
+
+            .write {
+            
+                align-items: center;
+                font-size: 30px;
+                font-weight: 700;
+                margin: 0 0 20px;
+            }
+
+            .button2 {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin: 20px;
+            }
+
+            .but-1 {
+                font-size: 15px;
+                color: black;
+                background-color:white;
+                padding: 1%;
+                border-radius: 15px;
+            }
+
+            video {
+                height: 100%;
+                width: 100%;
+            }
+            .main-container4{
+                height: 90vh;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            
+            }
+            .img2{
+                width: 80%;
+                display: flex;
+justify-content: right;
+align-items: end;
+}
+.box{
+    width: 90%;
+    height: 400px;
+    display: flex;
+    justify-content: right;
+align-items: self-start;
+align-items: start;
+z-index: -1;
+position: absolute;
+}
+
+
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+.slider {
+	background: transparent;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 100%;
+	
+	&::before,
+	&::after {
+	
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll 40s linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	
+	.slide {
+		height: 100px;
+		width: 250px;
+	}
+
+}
+.footer{
+    display: flex;
+  width: 100%;
+background-color: #4A458b;
+justify-content: space-between;
+}
+.all-logo{
+
+}
+.foot2{
+width: 60%;
+display: flex;
+justify-content: space-around;
+}
+.dis-logo{}
+
+.button3{
+            padding: 10px 20px;
+                border: 2px solid white;
+                color: black;
+                background-color: white;
+                border-radius: 20px;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6257d23c5fb25be7e0b6e220_Open%20Source%20Projects%20_%20Discord-7.svg"
+                alt="discord logo" height="60" width="100">
+            <div>
+                <a href="#">
+                    Download
+                </a>
+                <a href="#">
+                    Nitro
+                </a>
+                <a href="#">
+                    Discover
+                </a>
+                <a href="#">
+                    Quests
+                </a>
+                <a href="#">
+                    Safety
+                </a>
+                <a href="#">
+                    Support
+                </a>
+                <a href="#">
+                    Blog
+                </a>
+                <a href="#">
+                    Careers
+                </a>
+            </div>
+            <a class="login-btn" href="#">
+                Login
+            </a>
+        </div>
+
+        <div class="main-content">
+            <div class="text-content">
+                <h1>
+                    GROUP CHAT <br>THAT'S ALL <br>FUN &amp; GAMES
+                </h1>
+                <p>
+                    Discord is great for playing games and <br>chilling with friends, or even building a <br>worldwide
+                    community. Customize your <br> own space to talk, play, and hang out.
+                </p>
+            </div>
+            <div class="image-content">
+                <img alt="" height="600"
+                    src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/664dae3aa8fa28593aa47cc6_CHARACTERS%20FULL.webp"
+                    width="1000" />
+            </div>
+        </div>
+        <div class="button">
+            <button class="but1">Download for windows</button>
+            <button class="but2">Open Discord in your browser</button>
+        </div>
+        </div>
+        <div class="img">
+            <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6620ec7544fa3849c3cb27fc_party_wumpus.gif"
+                width="100px" alt="">
+        </div>
+        <center>
+            <div class="container">
+                <div class="left-section">
+                    <div class="vedio">
+                        <video loop muted autoplay="autoplay">
+                            <source
+                                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/663b271d6f05c8c9e11f8d65_Discord%20Refresh%20Sound-MP4-transcode.mp4"
+                                type="">
+
+                        </video>
+                    </div>
+                </div>
+
+                <div class="right-section">
+                    <h1>
+                        MAKE YOUR
+                        GROUP CHATS
+                        MORE FUN
+                    </h1>
+                    <p>
+                        Use custom emoji, stickers, soundboard effects and more to add your personality to your voice,
+                        video, or text chat. Set your avatar and a custom status, and write your own profile to show up
+                        in chat your way.
+                    </p>
+                </div>
+            </div>
+        </center>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div class="container1">
+                <div class="left-section1">
+                    <h1>
+                        STREAM LIKE
+                        YOU'RE IN
+                        SAME ROOM
+                    </h1>
+                    <P>High quality and low latency streaming makes it feel like you're hanging out on the couch with
+                        friends while playing a game, watching shows,looking at photos, or idk doing homework or
+                        something.</P>
+                </div>
+
+                <div class="right-section1">
+                    <div class="vedio2">
+                        <video loop muted autoplay="autoplay">
+                            <source
+                                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2%2F665434315cbc60da2d4c9684_Discord_Website_Refresh_Same%20Room_EN_V2-transcode.mp4"
+                                type="">
+
+                        </video>
+                    </div>
+        </center>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      
+        <div class="box">
+            <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6630f482123160b94617877a_Box%20(1).webp"
+                width="200px" alt="">
+        </div>
+        <center>
+            <div class="container2">
+                <div class="left-section2">
+                    <div class="vedio3">
+                        <video loop muted autoplay="autoplay">
+                            <source
+                                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6638c6b04eff56a99c1e2d7d_Discord_Website_Refresh_Hop-In-transcode.mp4"
+                                type="">
+
+                        </video>
+                    </div>
+                </div>
+                <div class="right-section2">
+                    <h1>
+                        HOP IN WHEN
+                        YOU'RE FREE,
+                        NO NEED TO CALL
+                    </h1>
+                    <p>
+                        Easliy hop in and out of voice or text chats without having to call or invite anyone,so your
+                        party chat lasts before,during, and after your game session.
+                    </p>
+                </div>
+            </div>
+        </center>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/665786b8a93285bff36e194e_discord-mark-white%202.webp   " height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    
+                </div>
+                <div class="slide">
+                    <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/665786b8a93285bff36e194e_discord-mark-white%202.webp" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+    
+                </div>
+                <div class="slide">
+                    <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/665786b8a93285bff36e194e_discord-mark-white%202.webp" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+          
+                </div>
+                <div class="slide">
+                    <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/665786b8a93285bff36e194e_discord-mark-white%202.webp" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+
+                </div>
+                <div class="slide">
+                    <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/665786b8a93285bff36e194e_discord-mark-white%202.webp" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+
+                </div>
+                <div class="slide">
+                    <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/665786b8a93285bff36e194e_discord-mark-white%202.webp" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+               
+                </div>
+                <div class="slide">
+                    <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/665786b8a93285bff36e194e_discord-mark-white%202.webp" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+          
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <CEnter>
+            <div class="container3">
+                <div class="left-section3">
+                    <h1>
+                        SEE WHO'S
+                        AROUND TO
+                        CHILL
+                    </h1>
+                    <P>see who's around, playing games, or just hanging out. for supported games, you can see what modes
+                        or characters your friends are playing and directly join up.</P>
+                </div>
+                <div class="right-section3">
+                    <div class="vedio4">
+                        <video loop muted autoplay="autoplay">
+                            <source
+                                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6638c6b04eff56a99c1e2d7d_Discord_Website_Refresh_Hop-In-transcode.mp4"
+                                type="">
+
+                        </video>
+                    </div>
+        </center>
+        </div>
+
+      
+        </DIV>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="main-container4">
+            <div class="img2">
+                <img id="image1" height="150px" width="200px" src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6633621b9b5c83e2ee57271f_woman-top-p-500.webp"
+                    alt="girl2"> <img id="image2" height="220px" width="260px"
+                    src="Screenshot_2024-11-13_163131-removebg-preview.png"  alt="boy-girl" >
+            </div>
+            <div class="container4">
+                <div class="left-section4">
+                    <div class="vedio5">
+                        <video loop muted autoplay="autoplay">
+                            <source
+                                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66446078b3e738a7c1f85e35_Discord_Website_Refresh_Activities_03-transcode.mp4"
+                                type="">
+                        </video>
+
+                     
+                    </div>
+                </div>
+                <div class="right-section4">
+                    <h1>
+                        ALWAYS HAVE
+                        SOMETHING TO
+                        DO TOGETHER
+                    </h1>
+                    <p>
+                        Watch videos,play built-in games,listen to music,or just scroll togther and spam memes.
+                        seamlessly text,call,video chat,and play games,all in one group chat.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div class="container5">
+                <div class="left-section5">
+                    <h1>
+                        WHEREVER YOU GAME,
+                        HANG OUT HERE
+                    </h1>
+                    <P>on your PC, phone,or console,you can still hang out on Discord. Easily switch betwwen devices and
+                        use tools to manage multiple group chats with friends.</P>
+                </div>
+                <div class="right-section5">
+                    <div class="vedio6">
+                        <video loop muted autoplay="autoplay">
+                            <source
+                                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6638c8e7cb756886cd8d61af_Discord_Website_Refresh_Platforms-transcode.mp4"
+                                type="">
+                        </video>
+                    </div>
+        </center>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center><div class="write">
+            <h1>YOU CAN'T SCROLL ANYMORE.</h1>
+            <H1>BETTER GO CHAT.</H1>
+        </div></center>
+        <div class="button2">
+            <button class="but-1">Download for windows</button>
+        </div>
+        <div class="discord-img">
+            <img width="100%"
+                src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6658cc069d1eb1caf9426914_Footer-Art_cut-p-1600.webp"
+                alt="">
+        </div>
+        <div class="footer">
+        <div class="all-logo">
+            <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6257bf8b5ba300233705a542_en.png"     alt="">
+            <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe10ef3e439bb3365f6a_Arrow.svg" alt="">
+            <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe4237b6a1c4fa714f76_x.svg" alt="">
+            <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe42d907d27f3dead7a0_instagram.svg" alt="">
+            <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe4173c1df8be608c8a2_facebook.svg" alt="">
+            <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe42d907d27f3dead7ad_youtube.svg" alt="">
+        <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65a4fe4152ae5860036dadf1_tiktok.svg" alt="">
+        </div>
+        <div class="foot2">
+<div class="line1">
+    <h1>product</h1>
+    <p>Download</p>
+    <p>Nitro</p>
+    <p>Status</p>
+    <p>App Directory</p>
+    <p>New mobile </p>
+    <p>Experience</p>
+</div>
+<div class="line2">
+    <h1>Company</h1>
+    <p>About</p>
+    <p>Jobs</p>
+    <p>Brand</p>
+    <p>Newsroom</p>
+</div>
+<div class="line3">
+    <h1>Resources</h1>
+    <p>College</p>
+    <p>Support</p>
+    <p>Safety</p>
+    <p>Blog</p>
+    <p>Feedback</p>
+    <p>StreamKit</p>
+    <p>Creators</p>
+    <p>Community</p>
+    <p>Developers</p>
+    <p>Gaming</p>
+    <p>Quests</p>
+    <p>Official 3rd party</p> 
+    <p>Merch</p>
+</div>
+<div class="line4">
+    <h1>Policies</h1>
+    <p>Terms</p>
+    <p>Privacy</p>
+    <p>Cookie Settings</p>
+    <p>Guidelines</p>
+    <p>Acknowledgements</p>
+    <p>Licenses</p>
+    <p>Company Information</p>
+</div>
+
+        </div>
+    
+    </div>
+    <div class="dis-logo">
+        <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6257d23c5fb25be7e0b6e220_Open%20Source%20Projects%20_%20Discord-7.svg" alt=""  height="60" width="100">
+        <div>
+            <div class="sign-in">
+                <div class="button3">
+                    <button class="but1">sign up</button>
+            </div>
+    </div>
+    </body>
+
+    </html>
